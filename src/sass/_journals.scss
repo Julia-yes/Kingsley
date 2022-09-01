@@ -1,0 +1,49 @@
+@use '_variables';
+
+.journals {
+    padding: 150px 10px;
+
+      &__title {
+        padding-bottom: 100px;
+        font-family: variables.$italic-font;
+        line-height: 50px;
+        font-size: 32px;        
+        font-weight: 600;
+        font-style: normal;
+        letter-spacing: -.95px;
+        text-align: center;
+        margin: 0;
+      }
+
+      &__content {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+     &__item {
+      width: 130px;      
+
+      &-wrapper {
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         height: 73px;
+      }
+   }
+}
+
+@media screen and (max-width: variables.$md){
+   .journals {
+
+      &__item {
+         max-width: 100%;
+         
+         &-wrapper {
+            height: 48px;
+            width: auto;
+         }
+      }
+   }
+}

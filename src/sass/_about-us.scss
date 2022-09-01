@@ -1,0 +1,125 @@
+@use '_variables';
+
+.about-us {
+    padding: 150px 10px;
+    display: flex;
+    flex-direction: row;
+    gap: 232px;
+    align-items: center;
+    justify-content: center;    
+
+    &-wrapper {
+        background-color: variables.$grey;
+    }
+
+    &__item{
+        width: 424px;
+        display: flex;
+        margin: 0 auto;
+        flex-direction: column;
+        gap: 50px;
+        flex-shrink: 1;        
+    }
+
+    &__img {
+        height: 539px;
+        object-fit: cover;
+        margin: 0;
+
+        &_2 {
+            order: 2;
+        }
+    }
+
+    &__title {
+        padding-bottom: 30px;
+        font-family: variables.$main-font;
+        font-size: 30px;
+        font-weight: 600;
+        font-style: normal;
+        color: variables.$text-color-grey;
+        text-transform: uppercase;
+        letter-spacing: 6px;
+        margin: 0;
+        min-height: 100px;
+        display: flex;
+        align-items: center;
+    }
+
+    &__text {
+        font-family: variables.$main-font;
+        font-size: 16px;
+        font-weight: 500;
+        font-style: normal;
+        color: variables.$text-color-grey;
+    }
+
+}
+
+.about-us-wrapper .wrapper .about-us .owl-dots {
+    margin-top: 40px;
+}
+
+.owl-theme .owl-dots .owl-dot.active span {
+    background: black !important;
+    width: 8px;
+    height: 8px;
+}
+
+.owl-theme .owl-dots .owl-dot span {
+    background: white !important;
+}
+
+@media screen and (max-width: 1100px){
+    .about-us {
+        width: 100%;
+        gap: 0;
+        justify-content: space-between;
+
+        &__item{
+            width: 40%;
+        }
+    
+        &__img {
+            height: auto;
+        }
+    }
+}
+
+@media screen and (max-width: variables.$md){
+    .about-us {
+        max-width: 290px;
+        margin: 0 auto; 
+        align-items: stretch;
+        padding-bottom: 110px;
+
+        &__title {
+            justify-content: center;
+        }
+
+        &__item{
+            width: 270px;
+        }
+
+        &__content {
+            order: 2;
+            text-align: center;
+        }
+       
+        &__img {
+            order: 1;
+        }
+
+        .owl-stage-outer {
+            overflow: visible;
+        }
+    }
+}
+
+@media screen and (max-width: variables.$xs){
+    .about-us {
+        &__item{
+            width: auto;
+        }
+    }
+}

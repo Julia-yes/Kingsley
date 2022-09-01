@@ -1,0 +1,15 @@
+<svg viewBox="0 0 205 15" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+        <path id="star" d="M7.5,0l-2,5h-5l4,3.5l-2,6l5-3.5&#xA;&#x9;l5,3.5l-2-6l4-3.5h-5L7.5,0z"/>
+    </defs>
+  <use href="#star" x="0" fill="#cf578a"/>
+  <use href="#star" x="20.5" fill="#cf578a"/>
+  <use href="#star" x="41" fill="#cf578a"/>
+  <use href="#star" x="61.5" fill="#cf578a"/>
+  <use href="#star" x="82" fill="#cf578a"/>
+  <use href="#star" x="102.5" fill="#bbb"/>
+  <use href="#star" x="123" fill="#bbb"/>
+  <use href="#star" x="143.5" fill="#bbb"/>
+  <use href="#star" x="164" fill="#bbb"/>
+  <use href="#star" x="184.5" fill="#bbb"/>
+</svg>

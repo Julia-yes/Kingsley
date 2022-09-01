@@ -1,0 +1,47 @@
+@use '_variables';
+
+.bestsellers {
+    padding: 100px 50px 70px 50px;
+
+    &__title {
+        font-size: 26px;
+    }
+
+    &__content {
+        padding: 24px 10px;
+        width: 100%;  
+    }
+
+    &__item {
+        z-index: 1;
+        position: relative;
+    }
+}
+
+.owl-carousel .owl-nav {
+    display: flex !important;
+    right: 0px !important;
+    left: 0px !important;
+    z-index: 10 !important;
+    position: relative !important;
+    padding: 0 10px;
+    bottom: 300px;
+}
+
+.owl-carousel .owl-nav.disabled {
+    display: none !important;
+}
+
+.owl-carousel .owl-nav button.owl-prev {
+    font-size: 70px !important;
+
+}
+.owl-carousel .owl-nav button.owl-next {
+    font-size: 70px !important;
+}
+
+@media screen and (max-width: variables.$xl){
+    .bestsellers {
+        padding: 100px 10px 70px;
+    }    
+}

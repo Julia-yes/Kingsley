@@ -1,0 +1,30 @@
+@use '_variables';
+
+.sign-up {
+    background-color: variables.$dark-blue;
+    font-family: variables.$main-font;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 12px;
+    text-align: center;
+    height: 44px;
+    display: flex;
+    align-items: center;    
+    
+    &__content {
+        color: white;
+        text-decoration: none;
+        margin: 0 auto;
+        text-transform: uppercase;
+        cursor: pointer;
+        border-bottom: 1px solid transparent;
+        transition: border-color 0.3s;
+        padding: 0 20px;
+
+        &:hover {
+            border-color: white;
+            color: white;
+        }
+    }
+ }
+

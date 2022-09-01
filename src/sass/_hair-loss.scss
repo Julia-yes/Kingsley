@@ -1,0 +1,106 @@
+@use '_variables';
+
+.hair-loss {
+    padding: 160px 70px;
+
+    &-wrapper {
+        background-color: variables.$dark-green;
+    }
+
+    &__title {
+        color: white;
+        font-size: 32px;
+    }
+
+    &__description {
+        padding: 50px 0 30px;
+        color: white;
+        font-size: 16px;
+        font-family: variables.$main-font;
+        font-weight: 400;
+        font-style: normal;
+        text-align: center;
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: stretch;
+    }
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 15px;
+        justify-content: space-between;
+
+        &_top {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+    }
+
+    &__text {
+        color: white;
+        font-size: 16px;
+        font-family: variables.$main-font;
+        font-weight: 400;
+        font-style: normal;
+        padding: 20px 0;
+        text-align: center;
+    }
+
+    &__img {
+        height: 65px;
+    }
+
+    &__button {
+
+        &:hover {
+            background-color: #315744;
+        }
+    }
+}
+
+@media screen and (max-width: variables.$xl){
+    .hair-loss {
+        padding: 160px 10px;
+    }
+
+}
+
+@media screen and (max-width: variables.$md){
+    .hair-loss {
+        padding: 100px 10px;
+        width: 428px;
+        margin: 0 auto;
+
+        &__content {
+            flex-direction: column;
+        }
+
+        &__text {
+            display: none;
+        }
+
+        &__button {
+            border: none;
+            line-height: 28.8px;
+            letter-spacing: 1.71px;
+            height: auto;
+        }
+
+        &__description {
+            padding: 40px 0;
+        }    
+    }
+}
+
+@media screen and (max-width: variables.$xs){
+    .hair-loss {
+        width: 100%;    
+    }
+}

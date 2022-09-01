@@ -1,0 +1,58 @@
+@use '_variables';
+
+.trichology {
+    padding: 150px 0;
+    color: variables.$text-color;
+
+    &__title {
+        font-family: variables.$main-font;
+        font-size: 14px;
+        font-weight: 700;
+        text-transform: uppercase;
+        text-align: center;
+        color: variables.$text-color;
+        margin: 0;
+        padding-bottom: 40px;
+        letter-spacing: 2.8px;
+    }
+
+    &__content {
+        font-family: variables.$italic-font, serif;
+        font-size: 30px;
+        line-height: 40px;
+        font-weight: 600;
+        font-style: normal;
+        text-align: center;
+        color: variables.$text-color;
+    }
+}
+
+@media screen and (max-width: variables.$xl){
+    .trichology {
+        padding: 150px 24px;
+    }
+}
+
+@media screen and (max-width: variables.$md){
+    .trichology {
+        width: 448px;
+        margin: 0 auto;
+        padding: 150px 0;
+
+        &__title {
+            font-size: 12px;
+        }
+    
+        &__content {
+            font-size: 20px;
+            line-height: 30px;
+        }
+    }
+}
+
+@media screen and (max-width: variables.$xs){
+    .trichology {
+        width: 100%;
+        padding: 150px 24px;
+    }
+}

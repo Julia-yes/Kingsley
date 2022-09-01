@@ -1,0 +1,31 @@
+@use '_variables';
+
+.main-button {
+    border: 1px solid black;    
+    border-radius: 2px;
+    background-color: transparent;
+    height: 54px;
+    padding: 14px 20px;
+    font-family: variables.$main-font;
+    font-size: 12px;
+    letter-spacing: 1.71px;
+    height: 54px;
+    line-height: normal;
+    font-weight: 600;
+    font-style: normal;    
+    text-transform: uppercase;
+    width: 100%;
+    transition: color .3s, background-color .3s, border-color .3s;
+
+    &:hover {
+        color: white;
+        background-color: black;
+        border-color: white;
+    }
+
+    &_white {
+        color: white;
+        border-color: white;
+    }
+ }
+

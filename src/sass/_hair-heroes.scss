@@ -1,0 +1,138 @@
+@use '_variables';
+
+.hair-heroes {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 100px 75px 100px 64px;
+    border-bottom: 1px solid variables.$grey;
+    margin-bottom: 20px;
+    position: relative;
+    color: variables.$text-color;
+
+        &::after {
+            content: "";
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            background: #fff;
+            border: 1px solid;
+            border-color: variables.$grey;
+            border-top: transparent;
+            border-right: transparent;
+            transform:  rotate(-45deg) translateX(-50%);
+            bottom: -3px;
+            left: 50%;                
+        }       
+
+    &__left {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50%;
+        padding-right: 35px;
+    }
+
+    &__img {
+        height: 400px;
+        width: 400px;
+        background-image: url(../../images/block1.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        overflow: hidden;
+    }
+
+    &__right {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items:flex-start ;
+        width: 50%;
+        flex-shrink: 1;
+        padding-left: 152px;
+    }
+
+    &__title {
+        font-family: variables.$italic-font, serif;
+        font-size: 28px;
+        line-height: 40px;
+        margin-bottom: 30px;
+        color: variables.$text-color;
+    }
+
+    &__button-wrapper {
+        padding-right: 40px;
+        width: 100%;
+    }
+
+    &__button {
+        padding: 14px 5px;
+    }
+ }
+
+ @media screen and (max-width: 1100px){
+
+    .hair-heroes {        
+        padding: 100px 35px 100px 24px;
+    }
+ }
+
+ @media screen and (max-width: variables.$lg){
+    .hair-heroes {
+        &__img {
+            height: 0;
+            padding-bottom: 100%;
+            width: 100%;
+        }        
+    }
+ }
+
+ @media screen and (max-width: variables.$md){
+    .hair-heroes {
+        flex-direction: column;
+        padding: 70px 24px;
+        align-items: center;
+        gap: 24px;
+
+        &__left {
+            width: 400px;
+            padding: 0;
+        }    
+
+        &__right {
+            width: 400px;
+            padding: 0;
+            align-items: center;
+        }
+
+        &__button-wrapper {
+            padding: 0;
+        }
+
+        &__title {
+            margin: 0;
+            padding-bottom: 24px;
+            font-size: 24px;
+            text-align: center;
+        }
+
+        &__content {
+            text-align: center;
+        }
+    }
+ }
+
+ @media screen and (max-width: variables.$xs){
+    .hair-heroes {
+        
+        &__left {
+            width: 100%;
+        }    
+
+        &__right {
+            width: 100%;
+        }        
+    }
+ }
+

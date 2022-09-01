@@ -1,0 +1,81 @@
+@use '_variables';
+
+.good {
+    background-color: variables.$grey;
+    padding: 30px;
+    height: 100%;
+    margin: 0 12px;
+
+    &__img {
+        width: 100% !important;
+        object-fit: cover;
+        overflow: hidden;
+        mix-blend-mode: multiply;
+
+        &-wrapper {
+            width: 100%;
+            height: 0;
+            padding-bottom: 100%;
+            flex-grow: 1;
+        }
+    }
+
+    &__name {
+        font-family: variables.$main-font;
+        font-size: 16px;
+        letter-spacing: .23px;
+        font-weight: 600;
+        padding-top: 5px;
+        color: variables.$text-color;
+    }
+
+    &__subtitle {
+        font-family: variables.$italic-font;
+        font-size: 16px;
+        letter-spacing: 0;
+        font-weight: 600;
+        color: variables.$text-color;
+    }
+
+    &__description {
+        font-family: variables.$main-font;
+        font-size: 12px;
+        letter-spacing: 0;
+        font-weight: 400;
+        padding-top: 10px;
+        height: 216px;
+        flex-grow: 1;
+        color: variables.$text-color;
+        line-height: 1.5;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+    }
+
+    &__content {
+        flex-grow: 1;
+        &-wrapper {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;            
+        }
+    }
+
+    &__price {
+        font-family: variables.$main-font;
+        font-size: 14px;
+        letter-spacing: 0.2px;
+        font-weight: 500;
+        color: variables.$text-color;
+        padding-left: 30px;
+    }
+
+    &__bottom {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-grow: 0;
+        align-items: center;
+    }
+}
